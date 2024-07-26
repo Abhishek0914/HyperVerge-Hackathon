@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Digital Notice Board</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+<body>
+  <h1 id="digital-notice-board-heading">DIGITAL NOTICE BOARD</h1><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <div id="app">
+    <!-- Google Slide Widget -->
+    <div id="google-slide-widget" class="widget">
+      <h2>Google Slide Widget</h2>
+      <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQXOeoaGTqX27yrL_Lkp-Yl6fGCB5FfIVH0EQ8zXZ1QJxoNfmrH-W_r1WFDLRpWxOdmqO-FDAGd4C6y/embed" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+    
+    <!-- Pomodoro Timer Widget -->
+    <div id="pomodoro-timer-widget" class="widget">
+      <h2>Pomodoro Timer</h2>
+      <div id="timer">25:00</div>
+      <button id="start-timer">Start</button>
+    </div>
+    
+    <!-- Mood-Based Task Recommender Widget -->
+    <div id="mood-widget" class="widget">
+      <h2>Mood-Based Task Recommender</h2>
+      <div id="mood-input">
+        <label for="mood">How are you feeling today?</label>
+        <select id="mood" name="mood">
+          <option value="happy">Happy</option>
+          <option value="stressed">Stressed</option>
+          <option value="bored">Bored</option>
+          <option value="tired">Tired</option>
+        </select>
+      </div>
+      <div id="task-suggestions">
+        <h3>Suggested Tasks</h3>
+        <ul id="task-list"></ul>
+      </div>
+      <div id="emotional-insights">
+        <h3>Emotional Insights</h3>
+        <p id="insight-text">Select your mood to see insights.</p>
+      </div>
+    </div>
+    
+    <!-- Countdown Timer Widget -->
+    <div id="countdown-widget" class="widget">
+      <h2>Countdown Timer</h2>
+      <input type="number" id="minutes-input" placeholder="Enter minutes" min="1">
+      <button id="start-timer-countdown">Start Timer</button>
+      <div id="countdown-display">00:00</div>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>

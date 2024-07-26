@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #007bff; /* Blue background color */
+  color: black; /* White text color */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+#digital-notice-board-heading {
+  font-family: 'Lobster', cursive;
+  font-size: 4em;
+  margin: 20px 0;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.widget {
+  background-color: #ffffff; /* White background for the widget */
+  color: #000000; /* Black text color for the widget */
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#google-slide-widget iframe {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+#timer, #countdown-display {
+  font-size: 2em;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#mood-input, #task-suggestions, #emotional-insights {
+  margin-bottom: 10px;
+}
+
+#task-list {
+  list-style: none;
+  padding: 0;
+}
+
+#task-list li {
+  background-color: #f8f9fa;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+#insight-text {
+  font-style: italic;
+  color: #555;
+}
